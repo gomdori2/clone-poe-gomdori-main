@@ -27,3 +27,9 @@
   - 현재 헤더 내부 다음 로고 작업중
 
 - node js 인강이나 이런거 하나 듣기(간단 crud 게시판 이런거라도 하나 듣자.)
+
+## 2024-04-11
+
+- header-inner : poe-menu-logo 지정, poe-menu-nav 지정, poe-menu-nav-btn 이미지 정리
+- flex 적용해서 css정리를 하려했으나 flex 적용하고 position 관련 이슈로 정리가 잘 안됨.
+- 나중에 position 관련된거 배우고 난 후 다시 정리해볼 것
