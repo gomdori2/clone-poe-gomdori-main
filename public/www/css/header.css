@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  z-index: 1000;
+  min-width: 1240px;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: left;
+}
+.inner-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pubGameGGB .inner-head {
+  display: flex;
+  position: relative;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 84.92px;
+  height: 21px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pubGameGGB .inner-head .link-ggb {
+  display: block;
+  background: url("../images/icon-image.png") no-repeat 0 0;
+  width: 43px;
+  height: 18px;
+}
+.header-logo-game-img {
+  width: 37px;
+  height: 21px;
+  display: block;
+  background: url("../images/icon-image.png") no-repeat;
+  background-position: -47px 0;
+}
+.daum-game-nav {
+  width: 209.81px;
+  height: 72px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.daum-game-nav-menu {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.daum-game-nav-menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: orange;
+  gap: 6px;
+}
+
+.daum-game-nav-menu li a {
+  cursor: pointer;
+}
+
+.daum-game-nav-menu li .daum-game-nav-menu-text {
+  cursor: pointer;
+}
+.new-img {
+  width: 32px;
+  height: 13px;
+  margin: 3px -36px 0 4px;
+  background: url("../images/icon-image.png");
+  background-position: -90px -120px;
+}
+.daum-game-nav-menu li .daum-game-nav-menu-mobile {
+  margin-left: 50px;
+  color: #000;
+  font-weight: 500;
+}
+
+.daum-game-banner {
+  padding: 0;
+  width: 313px;
+  height: 62px;
+  display: flex;
+  margin: 0 auto;
+}
+.daum-game-banner a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 295px;
+  height: 62px;
+}
+
+.daum-game-banner a image {
+  width: 284px;
+  height: 62px;
+  background: url("../images/daum-game-banner-img.jpg") no-repeat center;
+  background-size: cover;
+}
+.daum-game-banner a span {
+  background: url("../images/icon-image.png") no-repeat -50px -30px;
+  width: 11px;
+  height: 6px;
+  cursor: pointer;
+}
+.daum-login {
+  width: 400px;
+  height: 56px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.daum-login-btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 152px;
+  height: 38px;
+  border: 1px solid #f9930e;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 38px;
+  color: #f9930e;
+  letter-spacing: -0.03em;
+  text-align: center;
+  vertical-align: middle;
+}

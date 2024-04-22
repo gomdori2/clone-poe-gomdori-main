@@ -4,11 +4,130 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>poe 클론 코딩 공부용</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../www/css/common.css" />
+    <link rel="stylesheet" href="../www/css/header.css" />
+    <link rel="stylesheet" href="../www/css/header-inner.css" />
+    <link rel="stylesheet" href="../www/css/main.css" />
+    <script src="./js/header.js"></script>
+    <script src="./js/header-inner.js"></script>
+    <script src="./js/slide.js"></script>
+
+    <style></style>
   </head>
   <body>
-    <!-- header가 2개라 고민해봐야함. -->
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="wrap">
+      <!-- header가 2개라 고민해봐야함. -->
+      <header>
+        <div class="header" id="pubGameGGB">
+          <div class="inner-head">
+            <div class="header-logo">
+              <a class="link-ggb"></a>
+              <a class="header-logo-game-img"></a>
+            </div>
+            <div class="daum-game-nav">
+              <ul class="daum-game-nav-menu">
+                <li>
+                  <a>
+                    <strong class="daum-game-nav-menu-text">PC게임</strong>
+                    <!-- {/* 스플릿 아이콘 이미지 적용해놓음. */} -->
+                    <span class="new-img" />
+                  </a>
+                </li>
+                <li>
+                  <a class="daum-game-nav-menu-mobile">모바일게임</a>
+                </li>
+              </ul>
+            </div>
+            <div class="daum-game-banner">
+              <a>
+                <image></image>
+                <span></span>
+              </a>
+            </div>
+            <div class="daum-login">
+              <p>
+                안녕하세요!
+                <a id="userName"></a>님
+              </p>
+              <a>
+                <button class="daum-login-btn">로그아웃</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="header-inner" id="">
+          <div class="game-menu-inner-wrap">
+            <div class="header-inner-top">
+              <div class="header-inner-top-user">
+                <div class="header-inner-top-user-link">
+                  <a>로그인</a>
+                  <a>회원 가입</a>
+                  <a>고객센터</a>
+                </div>
+              </div>
+              <div class="header-inner-top-nation">
+                <div class="top-nation-icon">
+                  <a class="top-nation-icon-uk"></a>
+                  <a class="top-nation-icon-kr"></a>
+                </div>
+              </div>
+              <div class="top-game-start">
+                <a class="top-game-start-btn"></a>
+                <a class="top-game-download-btn"></a>
+              </div>
+            </div>
+            <div class="game-start">
+              <div class="poe-game-logo">
+                <a class="poe-game-logo-image"></a>
+              </div>
+              <div class="game-start-btn-wrap"></div>
+            </div>
+            <ul class="game-menu-nav-list">
+              <li>
+                <a class="menu-nav-list-news"></a>
+              </li>
+              <li>
+                <a class="menu-nav-list-info"></a>
+              </li>
+              <li>
+                <a class="menu-nav-list-commu"></a>
+              </li>
+              <li>
+                <a class="menu-nav-list-rank"></a>
+              </li>
+              <li>
+                <a class="menu-nav-list-trade"></a>
+              </li>
+
+              <li>
+                <a class="menu-nav-list-shop"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <!-- slide js에 forEach로 돌릴 것 -->
+          <div class="game-banner-slide">
+            <div class="swiper game-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide banner-img-security">Slide 1</div>
+                <div class="swiper-slide banner-img-price-box">Slide 2</div>
+                <div class="swiper-slide banner-img-guide">Slide 3</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>

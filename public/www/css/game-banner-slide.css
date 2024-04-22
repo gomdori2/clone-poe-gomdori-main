@@ -1,0 +1,9 @@
+.swiper-wrapper .swiper-slide .banner-img-security {
+  background: url("../images/banner-img-security.jpg") repeat !important;
+}
+.swiper-slide .banner-img-price-box .swiper-slide-next {
+  background: url("../images/banner-img-price-box.jpg") repeat !important;
+}
+.swiper-slide .banner-img-guide {
+  background: url("../images/banner-img-guide.jpg") repeat !important;
+}
