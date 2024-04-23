@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../www/css/header.css" />
     <link rel="stylesheet" href="../www/css/header-inner.css" />
     <link rel="stylesheet" href="../www/css/main.css" />
+    <link rel="stylesheet" href="../www/css/game-banner-slide.css" />
     <script src="./js/header.js"></script>
     <script src="./js/header-inner.js"></script>
     <script src="./js/slide.js"></script>
@@ -113,16 +114,41 @@
           </div>
         </div>
         <div class="content">
-          <!-- slide js에 forEach로 돌릴 것 -->
-          <div class="game-banner-slide">
-            <div class="swiper game-slide">
+          <div class="slide-wrap">
+            <!-- slide js에 forEach로 돌릴 것 -->
+            <!-- 일단 영역은 잡았음. css 변경하고 슬라이드 좌우 이동 버튼 변경할 것 -->
+            <!-- **상단부와 하단부 갯수 맞춰야함** -->
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper game-slide2"
+            >
               <div class="swiper-wrapper">
-                <div class="swiper-slide banner-img-security">Slide 1</div>
-                <div class="swiper-slide banner-img-price-box">Slide 2</div>
-                <div class="swiper-slide banner-img-guide">Slide 3</div>
+                <div class="swiper-slide" style="background-color: aqua">
+                  <a></a>
+                </div>
+                <div class="swiper-slide" style="background-color: burlywood">
+                  <a></a>
+                </div>
+                <div class="swiper-slide" style="background-color: violet">
+                  <a></a>
+                </div>
+                <div class="swiper-slide" style="background-color: royalblue">
+                  <a></a>
+                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper game-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><span>멍멍</span></div>
+                <div class="swiper-slide"><span>야옹</span></div>
+                <div class="swiper-slide"><span>멍멍2</span></div>
+                <div class="swiper-slide"><span>야옹2</span></div>
+              </div>
             </div>
           </div>
         </div>
