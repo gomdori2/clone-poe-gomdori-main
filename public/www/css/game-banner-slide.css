@@ -47,16 +47,18 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* swiper 화살표 버튼 변경 */
 .swiper-button-next {
-  position: absolute;
-  top: 200px;
-  --swiper-navigation-size: 15px;
-  z-index: 9999 !important;
+  position: absolute !important;
+  top: 196px !important;
+  right: 1px !important;
+  --swiper-navigation-size: 34px;
 }
+
 .swiper-button-prev {
   position: absolute !important;
-  top: 200px;
-  --swiper-navigation-size: 15px;
-  z-index: 9999 !important;
+  top: 196px;
+  left: -1px;
+  --swiper-navigation-size: 34px;
 }
+/* swiper 화살표 버튼 변경 */
