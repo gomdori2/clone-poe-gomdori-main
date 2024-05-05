@@ -30,15 +30,19 @@
 
 ## 2024-04-11
 
-- header-inner : poe-menu-logo 지정, poe-menu-nav 지정, poe-menu-nav-btn 이미지 정리
+- main-header-inner : poe-menu-logo 지정, poe-menu-nav 지정, poe-menu-nav-btn 이미지 정리
 - flex 적용해서 css정리를 하려했으나 flex 적용하고 position 관련 이슈로 정리가 잘 안됨.
 - 나중에 position 관련된거 배우고 난 후 다시 정리해볼 것
 
 ## 2024-04-14
 
-- 서버 연결 / 몽고 디비 연결
+- 서버 연결 / 몽고 디비 연결 - 리액트 옮기는 작업할 때 인강듣고 정리하기.
 - 인강 듣는 중
 
 ## 2024-04-22
 
 - header / inner header / main 내부 banner 영역 swiper 적용
+
+## 2024-05-05
+
+- 퍼블리싱 작업 중

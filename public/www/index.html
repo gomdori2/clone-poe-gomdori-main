@@ -11,11 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../www/css/common.css" />
     <link rel="stylesheet" href="../www/css/header.css" />
-    <link rel="stylesheet" href="../www/css/header-inner.css" />
+    <link rel="stylesheet" href="../www/css/main-header-inner.css" />
     <link rel="stylesheet" href="../www/css/main.css" />
     <link rel="stylesheet" href="../www/css/game-banner-slide.css" />
     <script src="./js/header.js"></script>
-    <script src="./js/header-inner.js"></script>
+    <script src="./js/main-header-inner.js"></script>
     <script src="./js/slide.js"></script>
 
     <style></style>
@@ -23,6 +23,7 @@
   <body>
     <div class="wrap">
       <!-- header가 2개라 고민해봐야함. -->
+      <!-- 다음 헤더 -->
       <header>
         <div class="header" id="pubGameGGB">
           <div class="inner-head">
@@ -63,17 +64,18 @@
         </div>
       </header>
       <main class="main">
-        <div class="header-inner" id="">
+        <!-- poe 헤더 -->
+        <div class="main-header-inner">
           <div class="game-menu-inner-wrap">
-            <div class="header-inner-top">
-              <div class="header-inner-top-user">
-                <div class="header-inner-top-user-link">
+            <div class="main-header-inner-top">
+              <div class="main-header-inner-top-user">
+                <div class="main-header-inner-top-user-link">
                   <a>로그인</a>
                   <a>회원 가입</a>
                   <a>고객센터</a>
                 </div>
               </div>
-              <div class="header-inner-top-nation">
+              <div class="main-header-inner-top-nation">
                 <div class="top-nation-icon">
                   <a class="top-nation-icon-uk"></a>
                   <a class="top-nation-icon-kr"></a>
@@ -106,7 +108,6 @@
               <li>
                 <a class="menu-nav-list-trade"></a>
               </li>
-
               <li>
                 <a class="menu-nav-list-shop"></a>
               </li>
@@ -146,25 +147,121 @@
                 >
                   <a></a>
                 </div>
-                <div class="swiper-slide" style="background-color: royalblue">
-                  <a></a>
-                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
             <div thumbsSlider="" class="swiper game-slide">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><span>멍멍</span></div>
-                <div class="swiper-slide"><span>야옹</span></div>
-                <div class="swiper-slide"><span>멍멍2</span></div>
-                <div class="swiper-slide"><span>야옹2</span></div>
+                <div class="swiper-slide">
+                  <!-- 네크로폴리스 리그 맞춤형 가이드 안내 -->
+                  <span class="game-slide-text"
+                    >네크로폴리스 리그 맞춤형 가이드</span
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <span class="game-slide-text"
+                    >네크로폴리스 리그 가이드 안내</span
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <!-- 네크로폴리스 미스터리 박스 출시 안내 -->
+                  <span class="game-slide-text"
+                    >네크로폴리스 미스터리 박스 출시...</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="kako-ch">
+              <a class="kako-ch-btn"></a>
+            </div>
+          </div>
+
+          <!-- 메인 공지사항 -->
+          <!-- 데이터 수에 따라 바뀌는건진 모르겠는데 한칸이 비워져있음. -->
+          <div>
+            <div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li></li>
+                <li>
+                  <span></span>
+                  <span></span>
+                </li>
+                <li></li>
+                <li>
+                  <span></span>
+                  <span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- banner-bar -->
+          <div>
+            <a></a>
+          </div>
+          <!-- 메인 left -->
+          <div class="content-left">
+            <!-- guide -->
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+            <!-- 트레일러 - 영상모음 -->
+            <div>
+              <!-- 추천영상 +(아이콘 찾아야함.) -->
+              <div></div>
+              <!-- 공식 트레일러 카드 -->
+              <div>
+                <div></div>
+              </div>
+              <!-- slide 영상카드 -->
+              <div>
+                <div></div>
+                <div></div>
               </div>
             </div>
           </div>
+          <!-- 메인 right -->
+          <div class="main-right">
+            <!-- 결제 아이템 소개 -->
+            <div>
+              <div></div>
+            </div>
+            <!-- 고객센터 외부링크 등등 -->
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <!-- story 슬라이드 위에슬라이드 재활용하자. -->
+          <div>
+            <div></div>
+          </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div>
+          <!-- footer top -->
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+          <!-- footer bottom -->
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

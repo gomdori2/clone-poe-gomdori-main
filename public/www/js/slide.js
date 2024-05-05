@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
   var swiper = new Swiper(".game-slide", {
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 4,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
@@ -25,6 +25,10 @@ window.addEventListener("load", function () {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
     },
     thumbs: {
       swiper: swiper,

@@ -1,5 +1,10 @@
 .main {
-  width: 980px;
+  width: 1012px;
   margin: 0 auto;
-  
+}
+.content {
+  position: relative;
+  margin: 0 auto;
+  width: 930px;
+  z-index: 10;
 }

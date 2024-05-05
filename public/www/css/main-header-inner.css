@@ -1,4 +1,4 @@
-.header-inner {
+.main-header-inner {
   /* // width: 980px; */
   height: 217px;
   /* // background-color: #fff; */
@@ -32,40 +32,42 @@
 
 .game-menu-inner-wrap {
   display: flex;
-  height: 100%;
+  height: 112%;
   background: url(../images/menu-wrap.png) no-repeat center;
   background-size: contain;
   position: relative;
   background-position-x: center;
   background-position-y: 90px;
+  z-index: 999999999;
+  padding: 0 32px;
 }
-.header-inner-top {
+.main-header-inner-top {
   display: flex;
   width: 100%;
   height: 42px;
   justify-content: space-between;
   flex-flow: wrap;
 }
-.header-inner-top-user {
+.main-header-inner-top-user {
   background: url(../images/header-inner-top-left-bg.png) no-repeat;
   height: 41px;
   min-width: 359px;
   background-position: 0px -94px;
   width: 50%;
 }
-.header-inner-top-user-link {
+.main-header-inner-top-user-link {
   display: block;
   /* 패딩으로 조절해봤음. */
   padding: 9px 13px 13px 20px;
 }
-.header-inner-top-user-link a {
+.main-header-inner-top-user-link a {
   width: 50%;
   color: #fff;
   text-decoration: none;
   color: #00b6ff;
   font-size: 71%;
 }
-.header-inner-top-nation {
+.main-header-inner-top-nation {
   width: 50%;
   text-align: -webkit-right;
   padding-top: 7px;
@@ -117,10 +119,9 @@
   width: 978px;
   font-size: 16.5px;
   position: absolute;
-  z-index: 1;
-  top: 161px;
+  top: 165px;
   bottom: 0px;
-  left: 0px;
+  left: 6px;
   right: 0px;
 
   display: flex;
@@ -141,33 +142,28 @@
 }
 .menu-nav-list-info {
   background: url(../images/btn-image.png) no-repeat;
-  background-position: -6px -165px;
+  background-position: -9px -115px;
+  margin-left: 3px;
 }
 .menu-nav-list-commu {
   background: url(../images/btn-image.png) no-repeat;
   background-position: -128px -14px;
 }
 .menu-nav-list-rank {
-  margin-left: 105px;
+  margin-left: 116px;
   background: url(../images/btn-image.png) no-repeat;
   background-position: -10px -15px;
 }
 .menu-nav-list-trade {
   background: url(../images/btn-image.png) no-repeat;
-  background-position: -248px -64px;
+  background-position: -247px -15px;
 }
 .menu-nav-list-shop {
   background: url(../images/btn-image.png) no-repeat;
-  background-position: -248px -114px;
+  background-position: -247px -115px;
+  margin-left: 4px;
 }
 
-.content {
-  position: relative;
-  text-align: left;
-  margin: 0 auto;
-  width: 960px;
-  padding: 4px 0;
-}
 .game-banner-slide {
   overflow: hidden;
   position: relative;
