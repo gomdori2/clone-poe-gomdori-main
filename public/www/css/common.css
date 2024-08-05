@@ -1,7 +1,8 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 body {
-  background: url(../images/body-img.jpg) no-repeat;
-  font: inherit;
+  background: #000 url(../images/body-img.jpg) no-repeat;
+  background-size: contain;
+  height: 100%;
 }
 .wrap {
   width: 100%;

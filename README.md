@@ -46,3 +46,15 @@
 ## 2024-05-05
 
 - 퍼블리싱 작업 중
+
+## 학원 1차, 2차 프로젝트 진행으로 작업 중단
+
+## 2024-07-26
+
+<!-- body {
+  background: #000 url(../images/body-img.jpg) no-repeat;
+  background-size: contain;
+  height: 100%;
+} -->
+
+- 색상 비슷한 배합으로 이미지 연결 다음 프로젝트 때 이미지를 쓸일이 있다면 쓸거같음.

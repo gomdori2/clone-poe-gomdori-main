@@ -17,8 +17,69 @@
     <script src="./js/header.js"></script>
     <script src="./js/main-header-inner.js"></script>
     <script src="./js/slide.js"></script>
+    <script src="./js/time.js"></script>
 
-    <style></style>
+    <style>
+      .notice-span {
+      }
+      .notice-span::before {
+        border-right: 1px solid #fff;
+      }
+      .more-btn {
+        cursor: pointer;
+        background: url(./images/btn-more.png) no-repeat;
+        background-position: 0px 0px;
+        display: inline-block;
+        height: 18px;
+        width: 19px;
+      }
+      .more-btn:hover {
+        background: url(./images/btn-more.png) no-repeat;
+        background-position: 0px -20px;
+      }
+      .liner-animation-l {
+        position: absolute;
+        border-left: 1px solid #fff;
+        display: inline-block;
+        height: 31px;
+        width: 91px;
+      }
+      .liner-animation-r {
+        position: absolute;
+        border-right: 1px solid #fff;
+        display: inline-block;
+        height: 31px;
+        width: 91px;
+      }
+      .liner-animation-t {
+        position: absolute;
+        border-top: 1px solid #fff;
+        display: inline-block;
+        height: 31px;
+        width: 91px;
+      }
+      .liner-animation-b {
+        position: absolute;
+        border-bottom: 1px solid #fff;
+        display: inline-block;
+        height: 31px;
+        width: 91px;
+      }
+      .hover {
+        .liner-animation-r:hover {
+          border-right: 1px solid #ffbe50;
+        }
+        .liner-animation-t:hover {
+          border-top: 1px solid #ffbe50;
+        }
+        .liner-animation-b:hover {
+          border-bottom: 1px solid #ffbe50;
+        }
+        .liner-animation-l:hover {
+          border-left: 1px solid #ffbe50;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="wrap">
@@ -180,41 +241,264 @@
 
           <!-- 메인 공지사항 -->
           <!-- 데이터 수에 따라 바뀌는건진 모르겠는데 한칸이 비워져있음. -->
-          <div>
-            <div>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+          <div
+            style="
+              display: flex;
+              background-color: #000;
+              max-width: 920px;
+              margin-left: 5px;
+            "
+          >
+            <div style="color: #fff; padding: 15px; width: 68%">
+              <ul
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+                  color: #fff1db;
+                  font-size: 13px;
+                "
+              >
+                <li
+                  style="
+                    border-bottom: 1px solid #fff;
+                    width: 450px;
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                    display: flex;
+                  "
+                >
+                  공지사항
+
+                  <span class="more-btn" style=""></span>
+                </li>
+                <li style="display: flex; gap: 20px">
+                  <span class="notice-span">공지사항</span>
+                  <span>07월 27일(토) 서비스 점검 안내 [07/26] 10:18 </span>
+                </li>
               </ul>
             </div>
-            <div>
+            <div style="width: 37%; height: 300px">
               <ul>
-                <li></li>
-                <li>
-                  <span></span>
-                  <span></span>
-                </li>
-                <li></li>
-                <li>
-                  <span></span>
-                  <span></span>
+                <li
+                  style="
+                    padding-top: 10px;
+                    background: url(./images/bg-pcbang.png);
+                    height: 74px;
+                    max-width: 275px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                  "
+                >
+                  <div
+                    style="display: flex; justify-content: center; gap: 10px"
+                  >
+                    <img src="./images/title-pcbang.png" />
+                    <span
+                      style="
+                        background: url(./images/img-pcbang-state.png) no-repeat;
+                        width: 55px;
+                        height: 24px;
+                        display: inline-block;
+                      "
+                    ></span>
+                  </div>
+                  <div
+                    style="
+                      color: #fff;
+                      display: flex;
+                      text-align: center;
+                      align-items: center;
+                      font-size: 13px;
+                    "
+                  >
+                    <div style="width: 50%">피시방 접속혜택</div>
+                    <div style="width: 50%">PC방 찾기</div>
+                  </div>
+                  <div
+                    style="
+                      color: #fff;
+                      background: url(./images/time-img.png) no-repeat;
+                    "
+                  >
+                    <div style="height: 124px">
+                      <div
+                        style="
+                          width: 88%;
+                          display: flex;
+                          justify-content: space-around;
+                          align-items: flex-end;
+                          height: 104px;
+                          padding-left: 16px;
+                        "
+                      >
+                        <div id="imgDay">10</div>
+                        <div id="imgHour"></div>
+                        <div id="imgMin"></div>
+                        <div id="imgSec"></div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
-          <!-- banner-bar -->
-          <div>
-            <a></a>
-          </div>
+
           <!-- 메인 left -->
-          <div class="content-left">
-            <!-- guide -->
+          <div
+            class="content-left"
+            style="display: flex; flex-direction: column; gap: 30px"
+          >
+            <!-- banner-bar -->
             <div>
-              <div></div>
-              <div></div>
+              <div
+                style="
+                  height: 40px;
+                  width: 100%;
+                  background: url(./images/banner.jpg);
+                "
+              ></div>
+            </div>
+            <!-- guide -->
+            <div style="display: flex; gap: 27px">
+              <div
+                style="
+                  background: url(./images/banner-text-box.jpg) no-repeat;
+                  width: 300px;
+                  height: 300px;
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  align-items: center;
+                  gap: 80px;
+                "
+              >
+                <div
+                  style="
+                    margin-top: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                  "
+                >
+                  <div style="color: #fff1db">
+                    패스 오브 엑자일 2 정보 공개!
+                  </div>
+                  <div style="font-size: 13px; color: #99948c">
+                    패스오브 엑자일 2에 대한 내용을 확인하세요!
+                  </div>
+                </div>
+                <div
+                  style="
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <a
+                    style="
+                      display: flex;
+                      border: 1px solid gray;
+                      align-items: center;
+                      justify-content: center;
+                      height: 30px;
+                      width: 100px;
+                      color: #fff1db;
+                      font-size: 13px;
+                    "
+                  >
+                    자세히 보기
+                  </a>
+                </div>
+              </div>
+              <div
+                style="
+                  background: url(./images/guid-banner.jpg) no-repeat;
+                  width: 300px;
+                  height: 300px;
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  align-items: center;
+                  gap: 80px;
+                "
+              >
+                <div
+                  style="
+                    margin-top: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                  "
+                >
+                  <div style="color: #fff1db">신규 및 복귀 게임 가이드</div>
+                  <div style="font-size: 13px; color: #99948c">
+                    엑린이, 복귀를 위한 모든 정보가 이곳에 있다!
+                  </div>
+                </div>
+                <div
+                  style="
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <a
+                    style="
+                      display: flex;
+                      border: 1px solid gray;
+                      align-items: center;
+                      justify-content: center;
+                      height: 30px;
+                      width: 100px;
+                      color: #fff1db;
+                      font-size: 13px;
+                    "
+                  >
+                    자세히 보기
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 20px">
+                <div
+                  style="
+                    width: 275px;
+                    height: 237px;
+                    background: url(./images/shop-banner1.jpg) no-repeat;
+                  "
+                >
+                  <div style="padding: 30px">
+                    <span style="color: #fff1db"
+                      >성기사<br />서포터 팩<br
+                    /></span>
+                    <span style="color: #fff1db"><br />99,000</span>
+                  </div>
+                  <div>
+                    <div
+                      class="hover"
+                      style="width: 91px; height: 31px; position: relative"
+                    >
+                      <span class="liner-animation-l"></span>
+                      <span class="liner-animation-r"></span>
+                      <span class="liner-animation-b"></span>
+                      <span class="liner-animation-t"></span>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    width: 275px;
+                    height: 237px;
+                    background: url(./images/shop-banner2.jpg) no-repeat;
+                  "
+                ></div>
+              </div>
             </div>
             <!-- 트레일러 - 영상모음 -->
             <div>
