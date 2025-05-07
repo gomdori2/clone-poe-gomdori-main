@@ -1,0 +1,136 @@
+.content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .banner-bar {
+    height: 40px;
+    width: 100%;
+    background: url('../images/banner.jpg');
+  }
+  
+  .guide-section {
+    display: flex;
+  }
+  .guide-box-wrap{
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+  .guide-box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 80px;
+    background-repeat: no-repeat;
+  }
+  
+  .guide-box1 {
+    background-image: url('../images/banner-text-box.jpg');
+  }
+  
+  .guide-box2 {
+    background-image: url('../images/guid-banner.jpg');
+  }
+  
+  .guide-text {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .guide-title {
+    color: #fff1db;
+  }
+  
+  .guide-desc {
+    font-size: 13px;
+    color: #99948c;
+  }
+  
+  .guide-btn-wrap {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .guide-btn {
+    display: flex;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    color: #fff1db;
+    font-size: 13px;
+  }
+  
+  .shop-banner-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .shop-banner {
+    width: 275px;
+    height: 237px;
+    background-repeat: no-repeat;
+  }
+  
+  .banner1 {
+    background-image: url('../images/shop-banner1.jpg');
+  }
+  
+  .banner2 {
+    background-image: url('../images/shop-banner2.jpg');
+  }
+  
+  .shop-info {
+    padding: 10px 0 0 10px;
+    color: #fff1db;
+  }
+  
+  .shop-btn-wrap {
+    margin-top: 75px;
+    display: flex;
+    width: 146px;
+    height: 31px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .liner-hover-div {
+    display: flex;
+    position: relative;
+  }
+  
+  .liner-hover-div.small {
+    width: 50px;
+  }
+  
+  .liner-hover-div p {
+    padding-top: 6px;
+    padding-left: 13px;
+    margin: 0;
+  }
+  // hover 부분 정리해야됨. 미완
+  .liner-animation-l,
+  .liner-animation-r,
+  .liner-animation-b,
+  .liner-animation-t {
+  }
+  
+  .trailer-section {
+  }
+  
+  .recommend-title,
+  .official-trailer,
+  .trailer-slide {
+  }

@@ -9,11 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="../www/css/common.css" />
-    <link rel="stylesheet" href="../www/css/header.css" />
-    <link rel="stylesheet" href="../www/css/main-header-inner.css" />
-    <link rel="stylesheet" href="../www/css/main.css" />
-    <link rel="stylesheet" href="../www/css/game-banner-slide.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main-header-inner.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/game-banner-slide.css" />
     <script src="./js/header.js"></script>
     <script src="./js/main-header-inner.js"></script>
     <script src="./js/slide.js"></script>
@@ -37,47 +37,52 @@
         background: url(./images/btn-more.png) no-repeat;
         background-position: 0px -20px;
       }
+      .liner-hover-div {
+        position: relative;
+        width: 100px;
+        height: 31px;
+        margin-right: 5px;
+      }
       .liner-animation-l {
         position: absolute;
         border-left: 1px solid #fff;
         display: inline-block;
-        height: 31px;
-        width: 91px;
+        width: 100%;
+        height: 100%;
       }
       .liner-animation-r {
         position: absolute;
         border-right: 1px solid #fff;
         display: inline-block;
-        height: 31px;
-        width: 91px;
+        width: 100%;
+        height: 100%;
       }
       .liner-animation-t {
         position: absolute;
         border-top: 1px solid #fff;
         display: inline-block;
-        height: 31px;
-        width: 91px;
+        width: 100%;
+        height: 100%;
       }
       .liner-animation-b {
         position: absolute;
         border-bottom: 1px solid #fff;
         display: inline-block;
-        height: 31px;
-        width: 91px;
+        width: 100%;
+        height: 100%;
       }
-      .hover {
-        .liner-animation-r:hover {
-          border-right: 1px solid #ffbe50;
-        }
-        .liner-animation-t:hover {
-          border-top: 1px solid #ffbe50;
-        }
-        .liner-animation-b:hover {
-          border-bottom: 1px solid #ffbe50;
-        }
-        .liner-animation-l:hover {
-          border-left: 1px solid #ffbe50;
-        }
+      /* emotion으로 변경 & sass 로 변경 예정 현재는 호버됬을시 색만 잡아둠 */
+      .liner-animation-r:hover {
+        border-right: 1px solid #ffbe50;
+      }
+      .liner-animation-t:hover {
+        border-top: 1px solid #ffbe50;
+      }
+      .liner-animation-b:hover {
+        border-bottom: 1px solid #ffbe50;
+      }
+      .liner-animation-l:hover {
+        border-left: 1px solid #ffbe50;
       }
     </style>
   </head>
@@ -190,21 +195,19 @@
               <div class="swiper-wrapper">
                 <div
                   class="swiper-slide"
-                  style="background: url(../www/images/banner-img-guide.jpg)"
+                  style="background: url(./images/banner-img-guide.jpg)"
                 >
                   <a></a>
                 </div>
                 <div
                   class="swiper-slide"
-                  style="
-                    background: url(../www/images/banner-img-price-box.jpg);
-                  "
+                  style="background: url(./images/banner-img-price-box.jpg)"
                 >
                   <a></a>
                 </div>
                 <div
                   class="swiper-slide"
-                  style="background: url(../www/images/banner-img-security.jpg)"
+                  style="background: url(./images/banner-img-security.jpg)"
                 >
                   <a></a>
                 </div>
@@ -472,23 +475,45 @@
                     background: url(./images/shop-banner1.jpg) no-repeat;
                   "
                 >
-                  <div style="padding: 30px">
+                  <div style="padding: 10px 0 0 10px">
                     <span style="color: #fff1db"
                       >성기사<br />서포터 팩<br
                     /></span>
                     <span style="color: #fff1db"><br />99,000</span>
                   </div>
-                  <div>
+                  <div style="margin-top: 75px">
                     <div
-                      class="hover"
-                      style="width: 91px; height: 31px; position: relative"
+                      style="
+                        display: flex;
+                        width: 146px;
+                        height: 31px;
+                        position: relative;
+                        color: #fff;
+                      "
                     >
-                      <span class="liner-animation-l"></span>
-                      <span class="liner-animation-r"></span>
-                      <span class="liner-animation-b"></span>
-                      <span class="liner-animation-t"></span>
+                      <div class="liner-hover-div">
+                        <span class="liner-animation-l"></span>
+                        <span class="liner-animation-r"></span>
+                        <span class="liner-animation-b"></span>
+                        <span class="liner-animation-t"></span>
+                        <p
+                          style="
+                            padding-top: 6px;
+                            padding-left: 13px;
+                            margin: 0;
+                          "
+                        >
+                          구매하기
+                        </p>
+                      </div>
+                      <div class="liner-hover-div" style="width: 50px">
+                        <span class="liner-animation-l"></span>
+                        <span class="liner-animation-r"></span>
+                        <span class="liner-animation-b"></span>
+                        <span class="liner-animation-t"></span>
+                        <p></p>
+                      </div>
                     </div>
-                    <div></div>
                   </div>
                 </div>
                 <div
@@ -497,7 +522,48 @@
                     height: 237px;
                     background: url(./images/shop-banner2.jpg) no-repeat;
                   "
-                ></div>
+                >
+                  <div style="padding: 10px 0 0 10px">
+                    <span style="color: #fff1db"
+                      >성기사<br />서포터 팩<br
+                    /></span>
+                    <span style="color: #fff1db"><br />99,000</span>
+                  </div>
+                  <div style="margin-top: 75px">
+                    <div
+                      style="
+                        display: flex;
+                        width: 146px;
+                        height: 31px;
+                        position: relative;
+                        color: #fff;
+                      "
+                    >
+                      <div class="liner-hover-div">
+                        <span class="liner-animation-l"></span>
+                        <span class="liner-animation-r"></span>
+                        <span class="liner-animation-b"></span>
+                        <span class="liner-animation-t"></span>
+                        <p
+                          style="
+                            padding-top: 6px;
+                            padding-left: 13px;
+                            margin: 0;
+                          "
+                        >
+                          구매하기
+                        </p>
+                      </div>
+                      <div class="liner-hover-div" style="width: 50px">
+                        <span class="liner-animation-l"></span>
+                        <span class="liner-animation-r"></span>
+                        <span class="liner-animation-b"></span>
+                        <span class="liner-animation-t"></span>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- 트레일러 - 영상모음 -->

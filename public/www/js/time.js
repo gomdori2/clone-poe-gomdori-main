@@ -12,7 +12,8 @@ window.addEventListener("load", () => {
     // String(s).length 기존에 length 로 잡던게 - 되면서 50부터라 length가 의미 없어짐
     // charAt으로 첫째값뽑는걸로 변경
     let dString = String(d).length === 1 ? `0${d}` : `${30 - d}`;
-    let hString = String(h).length === 1 ? `0${h}` : `0${24 - h}`;
+    let hString = String(h).length === 1 ? `0${h}` : `${24 - h}`;
+    console.log(String(h).length === 1);
     let mString =
       String(m).charAt(0) === "5" && String(m) !== "50" && String(m).length > 1
         ? "0" + `${60 - m}`
